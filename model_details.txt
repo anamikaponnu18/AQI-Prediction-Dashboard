@@ -1,0 +1,29 @@
+
+PROJECT: Big Data-Driven AQI Prediction System
+
+SELECTED MODEL:
+Random Forest Regressor
+
+PREDICTION:
+Next-day AQI prediction
+
+MODEL PERFORMANCE:
+MAE  = 23.7806
+RMSE = 41.9238
+R2   = 0.8690
+
+FEATURES:
+pm25, pm10, no2, so2, co, o3,
+aqi_lag_1, aqi_lag_2, aqi_lag_3,
+aqi_lag_7, aqi_7day_avg, month, day_of_week
+
+IMPORTANT:
+The model requires 13 features in the exact order
+provided in feature_columns.txt.
+
+Historical AQI values are required to calculate
+the lag and rolling-average features.
+
+The rolling average includes the current day's AQI.
+The current day's pollutant measurements and AQI
+history are assumed to be available at prediction time.

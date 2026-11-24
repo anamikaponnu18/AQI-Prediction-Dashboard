@@ -1,0 +1,13 @@
+pm25
+pm10
+no2
+so2
+co
+o3
+aqi_lag_1
+aqi_lag_2
+aqi_lag_3
+aqi_lag_7
+aqi_7day_avg
+month
+day_of_week
